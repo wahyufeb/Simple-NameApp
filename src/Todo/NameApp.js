@@ -74,7 +74,7 @@ class NameApp extends Component {
     await axios.delete(`${this.secretApi}/data/${id}`);
     await delete data[index];
     this.setState({ data, loading: true, editing: true });
-    this.alertOn("Berhasil menghapus Nama ");
+    this.alertOn("Berhasil Menghapus Nama ");
   };
 
   // Edit Todo
@@ -116,7 +116,7 @@ class NameApp extends Component {
         loading: false,
         editing: false
       });
-    }, 500);
+    }, 700);
   };
 
   render() {
